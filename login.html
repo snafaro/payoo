@@ -1,14 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full w-full">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>payoo</title>
+    <title>Payoo</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1 class="font-bold text-emerald-700">payoo</h1>
+<body class="w-full h-full">
+    <main class="h-full w-full flex justify-center items-center">
+        <div class="artboard phone-3 bg-slate-200 rounded-xl flex justify-center items-center">
+        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <form class="card-body">
+                <div class="form-control">
+                <label class="label">
+                    <span class="label-text">Number</span>
+                </label>
+                <input id="number" type="text" placeholder="Enter your number" class="input input-bordered" required />
+                </div>
+                <div class="form-control">
+                <label class="label">
+                    <span class="label-text">Pin</span>
+                </label>
+                <input id="pin" type="password" placeholder="pin" class="input input-bordered" required />
+                </div>
+                <div class="form-control mt-6">
+                <button id="log-btn" class="btn btn-primary">Login</button>
+                </div>
+            </form>
+     </div>
+        </div>
+    </main>
 
     <script src="js/login.js"></script>
 </body>
